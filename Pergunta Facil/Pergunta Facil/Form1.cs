@@ -12,9 +12,38 @@ namespace Pergunta_Facil
 {
     public partial class Form1 : Form
     {
+        Random aleatorio = new Random();
+        bool aux = false;
+        int x, y;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void acaoAoPassarMouse(object sender, EventArgs e)
+        {
+            
+            do
+            {
+                x = aleatorio.Next(12, 432);
+                y = aleatorio.Next(12, 432);
+                if ((x > 280 && x < 338) && (y > 12 && y < 174))
+                {
+                    aux = true;
+                }
+
+            } while (aux);
+            
+
+            //MessageBox.Show(Convert.ToString(i));            
+            //MessageBox.Show(Convert.ToString(btnNao.Location));
+            btnNao.Location = new Point(x, y);       
+        }
+
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Eu já sabia!!!");
         }
     }
 }
