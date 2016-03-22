@@ -23,21 +23,26 @@ namespace Pergunta_Facil
 
         private void acaoAoPassarMouse(object sender, EventArgs e)
         {
-            
-            do
+            x = aleatorio.Next(12, 432);
+            y = aleatorio.Next(12, 432);
+            /*do
             {
                 x = aleatorio.Next(12, 432);
                 y = aleatorio.Next(12, 432);
                 if ((x > 280 && x < 338) && (y > 12 && y < 174))
                 {
                     aux = true;
+                }else if((x > 93 && x < 100) && (y > 147 && y < 326))
+                {
+                    aux = true;
                 }
 
             } while (aux);
-            
+           // aux = false;            
 
             //MessageBox.Show(Convert.ToString(i));            
             //MessageBox.Show(Convert.ToString(btnNao.Location));
+            */
             btnNao.Location = new Point(x, y);       
         }
 

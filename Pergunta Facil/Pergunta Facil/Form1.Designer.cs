@@ -45,7 +45,7 @@
             // 
             // btnNao
             // 
-            this.btnNao.Location = new System.Drawing.Point(323, 309);
+            this.btnNao.Location = new System.Drawing.Point(325, 309);
             this.btnNao.Name = "btnNao";
             this.btnNao.Size = new System.Drawing.Size(75, 23);
             this.btnNao.TabIndex = 1;
