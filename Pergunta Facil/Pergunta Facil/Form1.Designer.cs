@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnSim = new System.Windows.Forms.Button();
+            this.btnNao = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnSim
+            // 
+            this.btnSim.Location = new System.Drawing.Point(47, 191);
+            this.btnSim.Name = "btnSim";
+            this.btnSim.Size = new System.Drawing.Size(75, 23);
+            this.btnSim.TabIndex = 0;
+            this.btnSim.Text = "Sim";
+            this.btnSim.UseVisualStyleBackColor = true;
+            // 
+            // btnNao
+            // 
+            this.btnNao.Location = new System.Drawing.Point(154, 191);
+            this.btnNao.Name = "btnNao";
+            this.btnNao.Size = new System.Drawing.Size(75, 23);
+            this.btnNao.TabIndex = 1;
+            this.btnNao.Text = "Não";
+            this.btnNao.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnNao);
+            this.Controls.Add(this.btnSim);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSim;
+        private System.Windows.Forms.Button btnNao;
     }
 }
 
